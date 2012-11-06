@@ -20,7 +20,7 @@ DivPeek has 5 configurable options:
 
 The first is an array of DOM elements to track. These do not have to be divs, they can be anything, alle they need is a unique ID.
 
-	var elementsToTrack = ["#scrollfx1","#scrollfx2","#scrollfx3","#scrollfx4","#scrollfx5","#scrollfx6","#scrollfx7"];
+	var elementsToTrack = ["#div1","#div2","#div3"];
 
 The pixel offset defines how much of the element may be visible before starting the animation. If set to -50 for example, 50 pixels of the element will be visible before the animation triggers.	
 	
@@ -73,7 +73,7 @@ viewport, and when the element enters the viewport it will animate back to defau
 
 Roadmap
 -------
-This is just a first version, so I'll probalby think of all kinds of cool stuff to to with it.
+This is just a first version, so I'll probably think of all kinds of cool stuff to to with it.
 
 
 

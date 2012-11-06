@@ -1,0 +1,190 @@
+/*
+DEMO PAGE STRUCTURE STYLES
+===========================================	
+*/
+
+body {
+	margin:0;
+	padding:0;
+	background:#a4aab9;
+	font-family:"Lucida Grande","Helvetica","Arial",sans-serif;
+	font-size:14px;
+	color:rgba(255,255,255,0.95);
+	line-height:1.5;
+}
+#container{
+	width:960px;
+	margin: 0 auto;
+}
+#header{
+	text-align:center;
+	border-bottom:1px dashed rgba(255,255,255,0.3);
+	padding-bottom:50px;
+}
+#header h1{
+	color:#ffffff;
+	font-size:120px;
+	text-shadow: 0 1px 0 #ccc,
+		0 2px 0 #c9c9c9,
+		0 3px 0 #bbb,
+		0 4px 0 #b9b9b9,
+		0 5px 0 #aaa,
+		0 6px 1px rgba(0,0,0,.1),
+		0 0 5px rgba(0,0,0,.1),
+		0 1px 3px rgba(0,0,0,.3),
+		0 3px 5px rgba(0,0,0,.2),
+		0 5px 10px rgba(0,0,0,.25),
+		0 10px 10px rgba(0,0,0,.2),
+		0 20px 20px rgba(0,0,0,.15);
+	margin-bottom:0;           
+}
+#header h2{
+	font-family:"Georgia",serif;
+	font-style:italic;
+	font-size:20px;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.7);
+	padding-bottom:30px;
+}
+#header p{
+	text-shadow:0 -1px 0 rgba(0,0,0,0.2);
+}
+
+.scrollspacer{
+	height:300px;
+}
+p.fxtitle{
+	text-align:center;
+	border-top:1px dashed rgba(255,255,255,0.3);
+	border-bottom:1px dashed rgba(255,255,255,0.3);
+	padding:10px 0;
+}
+#footer{
+	border-top:1px dashed rgba(255,255,255,0.3);
+	padding:20px 0;
+	text-align:center;
+	font-size:11px;
+}
+#footer a{
+	color:#fff;
+}
+#footer small{
+	font-size:11px;
+	color:rgba(255,255,255,0.5);
+}
+body.mini{
+	position:fixed;
+		top:20px;
+		right:20px;
+	-webkit-transform: scale(0.15);
+	-moz-transform: scale(0.15);
+	-ms-transform: scale(0.15);
+	-o-transform: scale(0.15);
+	transform: scale(0.15);
+	-webkit-transform-origin: top right;
+	-moz-transform-origin: top right;
+	-o-transform-origin: top right;
+	-ms-transform-origin: top right;
+	transform-origin: top right;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.7);
+	box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.7);
+	opacity:0.75;
+	overflow:hidden;      
+}
+
+/*
+ACTUAL DEMO STYLES
+===========================================	
+*/
+
+/* BUILD ANIMATION */
+.owlscrollfx{
+	width:750px;
+	margin: 0 auto;
+}
+.owl{
+	width:100px;
+	height:100px;
+	float:left;
+	background:url('../img/littleowl.png') top left no-repeat;
+	margin:10px;
+	position:relative;
+	-webkit-transition: 0.5s ease-out; 
+	-moz-transition: 0.5s ease-out; 
+	-o-transition: 0.5s ease-out;
+}
+.owl:nth-child(6n+1){left:0px;	opacity:1;	-webkit-transform: rotate(0deg); }
+.owl:nth-child(6n+2){left:0px;	opacity:1;	-webkit-transform: rotate(0deg); }
+.owl:nth-child(6n+3){left:0px;	opacity:1;	-webkit-transform: rotate(0deg); }
+.owl:nth-child(6n+4){left:0px;	opacity:1;	-webkit-transform: rotate(0deg); }
+.owl:nth-child(6n+5){left:0px;	opacity:1;	-webkit-transform: rotate(0deg); }
+.owl:nth-child(6n+6){left:0px;	opacity:1;	-webkit-transform: rotate(0deg); }
+
+.outViewPort .owl:nth-child(6n+1){left:-500px;	opacity:0;	-webkit-transform: rotate(-27.5deg); }
+.outViewPort .owl:nth-child(6n+2){left:-250px;	opacity:0.2;-webkit-transform: rotate(-15deg); }
+.outViewPort .owl:nth-child(6n+3){left:-50px;	opacity:0.7;-webkit-transform: rotate(-5deg); }
+.outViewPort .owl:nth-child(6n+4){left:50px;	opacity:0.7;-webkit-transform: rotate(5deg);}
+.outViewPort .owl:nth-child(6n+5){left:250px;	opacity:0.2;	-webkit-transform: rotate(15deg); }
+.outViewPort .owl:nth-child(6n+6){left:550px;	opacity:0;	-webkit-transform: rotate(27.5deg); }
+
+
+/* SIMPLE FADE IN ANIMATION */
+#scrollfx5{
+	width:750px;
+	height:200px;
+	margin: 0 auto;
+	background:url('../img/bigowl.png') top left no-repeat;
+	-webkit-transition: 1s ease-out; 
+	-moz-transition: 1s ease-out; 
+	-o-transition: 1s ease-out;
+}
+#scrollfx5.outViewPort{
+	opacity:0;
+}
+
+
+/* 3D TRANSFORM ANIMATION */
+#scrollfx6{
+	width:750px;
+	height:200px;
+	margin: 0 auto;
+	background:url('../img/bigowl.png') top left no-repeat;
+	-webkit-perspective: 300; 
+	-moz-perspective: 300; 
+	-ms-perspective: 300;
+	perspective: 300;
+	-webkit-transform: rotateY(0deg);  -webkit-transform-style: preserve-3d;
+	-moz-transform: rotateY(0deg);     -moz-transform-style: preserve-3d;
+	-ms-transform: rotateY(0deg);      -ms-transform-style: preserve-3d;
+	transform: rotateY(0deg);          transform-style: preserve-3d;
+	-webkit-transition: 1s ease-out; 
+	-moz-transition: 1s ease-out; 
+	-o-transition: 1s ease-out;
+}
+#scrollfx6.outViewPort{
+	-webkit-perspective: 300; 
+	-moz-perspective: 300; 
+	-ms-perspective: 300;
+	perspective: 300;
+	-webkit-transform: rotateY(180deg);  -webkit-transform-style: preserve-3d;
+	-moz-transform: rotateY(180deg);     -moz-transform-style: preserve-3d;
+	-ms-transform: rotateY(180deg);      -ms-transform-style: preserve-3d;
+	transform: rotateY(180deg);          transform-style: preserve-3d;
+}
+
+
+/* KEN BURNS EFFECT ANIMATION */
+#scrollfx7{
+	width:750px;
+	height:200px;
+	margin: 0 auto;
+	background:url('../img/bigowl.png') 50% 50% no-repeat;
+	-webkit-transition: 4s ease-out; 
+	-moz-transition: 4s ease-out; 
+	-o-transition: 4s ease-out;
+	-webkit-background-size: 125% 125%; 
+	background-size: 125% 125%;
+}
+#scrollfx7.outViewPort{
+	-webkit-background-size: 100% 100%; 
+	background-size: 100% 100%;
+}

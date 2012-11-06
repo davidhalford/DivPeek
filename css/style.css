@@ -105,12 +105,19 @@ ACTUAL DEMO STYLES
 	width:100px;
 	height:100px;
 	float:left;
-	background:url('../img/littleowl.png') top left no-repeat;
+	background:url('../img/littleowl.png') 50% 50% no-repeat;
 	margin:10px;
 	position:relative;
+	-webkit-background-size: 100% 100%; 
+	background-size: 100% 100%;
 	-webkit-transition: 0.5s ease-out; 
 	-moz-transition: 0.5s ease-out; 
 	-o-transition: 0.5s ease-out;
+}
+.owl:hover{
+	-webkit-background-size: 125% 125%; 
+	background-size: 125% 125%;
+	
 }
 .owl:nth-child(6n+1){left:0px;	opacity:1;	-webkit-transform: rotate(0deg); }
 .owl:nth-child(6n+2){left:0px;	opacity:1;	-webkit-transform: rotate(0deg); }

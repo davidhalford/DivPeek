@@ -11,6 +11,7 @@ body {
 	font-size:14px;
 	color:rgba(255,255,255,0.95);
 	line-height:1.5;
+	overflow-x:hidden;
 }
 #container{
 	width:960px;
@@ -70,25 +71,6 @@ p.fxtitle{
 #footer small{
 	font-size:11px;
 	color:rgba(255,255,255,0.5);
-}
-body.mini{
-	position:fixed;
-		top:20px;
-		right:20px;
-	-webkit-transform: scale(0.15);
-	-moz-transform: scale(0.15);
-	-ms-transform: scale(0.15);
-	-o-transform: scale(0.15);
-	transform: scale(0.15);
-	-webkit-transform-origin: top right;
-	-moz-transform-origin: top right;
-	-o-transform-origin: top right;
-	-ms-transform-origin: top right;
-	transform-origin: top right;
-	-webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.7);
-	box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.7);
-	opacity:0.75;
-	overflow:hidden;      
 }
 
 /*

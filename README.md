@@ -5,18 +5,10 @@ DivPeek is a simple, lightweight animate-on-scroll jQuery script. It simply watc
 All watched divs are assigned a 'visible' and 'not visible' class depending on their position in the viewport, thus animations (or anything really) can be added with CSS.
 the position of the divs in relation to the viewport is recalculated on every window change (i.e. scroll and resize) and watched elements are updated and animations triggered (when necessary).
 
-
-Minimap
--------
-
-DivPeek comes with a handy page overview minimap where you can see your current viewport and what's coming up to test you triggers. It can be enabled/disabled in the config.
-NOTE: please do not use the minimap in a production environment, as it was not made for this purpose and will most likely break.
-
-
 Config
 -------
 
-DivPeek has 5 configurable options:
+DivPeek has 4 configurable options:
 
 The first is an array of DOM elements to track. These do not have to be divs, they can be anything, alle they need is a unique ID.
 
@@ -25,10 +17,6 @@ The first is an array of DOM elements to track. These do not have to be divs, th
 The pixel offset defines how much of the element may be visible before starting the animation. If set to -50 for example, 50 pixels of the element will be visible before the animation triggers.	
 	
 	var pixelOffset = -50;
-	
-Use of the minimap is set as a boolean. Again: please do not use the minimap in production.
-	
-	var useMiniMap = true;
 	
 The last 2 options are the names of the classes given to tracked elements.
 	

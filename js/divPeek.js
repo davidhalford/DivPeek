@@ -2,12 +2,15 @@
 //(see https://github.com/davidhalford/DivPeek)
 //===============================================================================
 //CONFIG: 
-var elementsToTrack = ["#scrollfx1","#scrollfx2","#scrollfx3","#scrollfx4","#scrollfx5","#scrollfx6","#scrollfx7"];
+var elementsToTrack = ["#scrollfx1","#scrollfx2","#scrollfx3"];
 
 var pixelOffset = -24;
 var inClassName = "inViewPort";
 var outClassName = "outViewPort";
 //===============================================================================
+
+//add function to see of elements exist (otherwise removing an elemnet from DOM but not from array breaks everything)
+jQuery.fn.exists = function(){return this.length>0;}
 
 //define vars out of scope
 var viewPortHeight = $(window).height();
@@ -20,8 +23,7 @@ function recalcVars(){
 	scrollFromTop = $(window).scrollTop();
 	scrollFromBottom = (parseInt(scrollFromTop)+parseInt(viewPortHeight));
 	for (var i = 0; i < elementsToTrack.length; i++) {
-		var element =  document.getElementById(elementsToTrack[i]);
-		if (typeof(element) != 'undefined' && element != null){
+		if ($(elementsToTrack[i]).exists()) {
 			checkInViewport(scrollFromBottom, elementsToTrack[i]);
 		}
    	}

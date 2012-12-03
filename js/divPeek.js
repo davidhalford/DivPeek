@@ -20,7 +20,10 @@ function recalcVars(){
 	scrollFromTop = $(window).scrollTop();
 	scrollFromBottom = (parseInt(scrollFromTop)+parseInt(viewPortHeight));
 	for (var i = 0; i < elementsToTrack.length; i++) {
-   		checkInViewport(scrollFromBottom, elementsToTrack[i]);
+		var element =  document.getElementById(elementsToTrack[i]);
+		if (typeof(element) != 'undefined' && element != null){
+			checkInViewport(scrollFromBottom, elementsToTrack[i]);
+		}
    	}
 }
 

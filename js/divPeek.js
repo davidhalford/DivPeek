@@ -2,7 +2,7 @@
 //(see https://github.com/davidhalford/DivPeek)
 //===============================================================================
 //CONFIG: 
-var elementsToTrack = ["#scrollfx1","#scrollfx2","#scrollfx3"];
+var elementsToTrack = ["#scrollfx1","#scrollfx2","#scrollfx3","#scrollfx4","#scrollfx5","#scrollfx6","#scrollfx7"];
 
 var pixelOffset = -24;
 var inClassName = "inViewPort";
@@ -29,8 +29,12 @@ function recalcVars(){
    	}
 }
 
+//catch window events
 $(window).resize(function(e){recalcVars();});
-$(window).scroll(function(e){recalcVars();});
+document.addEventListener("touchmove", ScrollStart, false);
+document.addEventListener("scroll", Scroll, false);
+function ScrollStart(){recalcVars();}
+function Scroll(){recalcVars();}
 
 //function that handles if an element is in the viewport or not 
 function checkInViewport(scrollBottom, domElement){

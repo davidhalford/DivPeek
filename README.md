@@ -10,7 +10,7 @@ Config
 
 DivPeek has 4 configurable options:
 
-The first is an array of DOM elements to track. These do not have to be divs, they can be anything, alle they need is a unique ID.
+The first is an array of DOM elements to track. These do not have to be divs, they can be anything, all they need is a unique ID.
 
 	var elementsToTrack = ["#div1","#div2","#div3"];
 
@@ -58,10 +58,15 @@ If some ancient browser doesn't support JS, the user is stuck with the default s
 the height of the element will be 200px, whether your browser supports JS or not. Above I've set the 'outViewPort'-class to 0 height. As soon as the page is loaded and a scroll occurs this will happen outside of the
 viewport, and when the element enters the viewport it will animate back to default state. So a good idea would be to use the second method.
 
+Changelog
+---------
+v1.1: added touch-scroll events
+v1.0: initial project
 
 Roadmap
 -------
-This is just a first version, so I'll probably think of all kinds of cool stuff to to with it.
+- check in/out viewport from top too
+- option to only animate once, then keep in final state
 
 
 

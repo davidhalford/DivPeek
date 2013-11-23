@@ -70,7 +70,9 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 Do whatever you want with DivPeek. All I ask is you mention me in the work. Oh, and if you use it for something cool, let me know :)
 
-
+Feature Requests
+----------------
+If you want a custom feature that isn't in the original code, [check out the issues page](https://github.com/davidhalford/DivPeek/issues?page=1&state=closed). If your feature isn't already there, open a new feature request and I'll see what I can do.
 
 Roadmap
 -------

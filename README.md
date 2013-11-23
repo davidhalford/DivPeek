@@ -65,10 +65,11 @@ Changelog
 
 License
 -------
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
-Do whatever you want with DivPeek. All I ask is you mention me in the work.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
-![CC License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
+Do whatever you want with DivPeek. All I ask is you mention me in the work. Oh, and if you use it for something cool, let me know :)
+
 
 
 Roadmap

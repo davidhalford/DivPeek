@@ -77,7 +77,7 @@ If you want a custom feature that isn't in the original code, [check out the iss
 Roadmap
 -------
 - check in/out viewport from top too
-- option to only animate once, then keep in final state
+- option to only animate once, then keep in final state ([quick fix here](https://github.com/davidhalford/DivPeek/issues/3).)
 
 
 

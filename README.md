@@ -60,8 +60,16 @@ viewport, and when the element enters the viewport it will animate back to defau
 
 Changelog
 ---------
-v1.1: added touch-scroll events
-v1.0: initial project
+- v1.1: added touch-scroll events
+- v1.0: initial project
+
+License
+-------
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+Do whatever you want with DivPeek. All I ask is you mention me in the work.
+
+![CC License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)
+
 
 Roadmap
 -------

@@ -14,12 +14,12 @@ The first is an array of DOM elements to track. These do not have to be divs, th
 
 	var elementsToTrack = ["#div1","#div2","#div3"];
 
-The pixel offset defines how much of the element may be visible before starting the animation. If set to -50 for example, 50 pixels of the element will be visible before the animation triggers.	
-	
+The pixel offset defines how much of the element may be visible before starting the animation. If set to -50 for example, 50 pixels of the element will be visible before the animation triggers.
+
 	var pixelOffset = -50;
-	
+
 The last 2 options are the names of the classes given to tracked elements.
-	
+
 	var inClassName = "inViewPort";
 	var outClassName = "outViewPort";
 
@@ -27,14 +27,14 @@ The last 2 options are the names of the classes given to tracked elements.
 Best practice
 -------------
 
-Creating animations is fun as hell, especially in modern browsers. There are still some browsers that do not support css-transforms yet. For the sake of progressive enhancement please 
+Creating animations is fun as hell, especially in modern browsers. There are still some browsers that do not support css-transforms yet. For the sake of progressive enhancement please
 trigger your animations backwards, so the final state is the state users see that do not have compatible browsers. An example:
 
 	#myelement{
-		-webkit-transition: 1s ease-out; 
-		-moz-transition: 1s ease-out; 
+		-webkit-transition: 1s ease-out;
+		-moz-transition: 1s ease-out;
 		-o-transition: 1s ease-out;
-		
+
 		height:0;
 	}
 	#myelement.inViewPort{
@@ -45,10 +45,10 @@ The above code creates a height animation on the element, sliding it down over 1
 If some ancient browser doesn't support JS, the user is stuck with the default state, which has a height of 0. But if we flip this animation like this:
 
 	#myelement{
-		-webkit-transition: 1s ease-out; 
-		-moz-transition: 1s ease-out; 
+		-webkit-transition: 1s ease-out;
+		-moz-transition: 1s ease-out;
 		-o-transition: 1s ease-out;
-		
+
 		height:200px;
 	}
 	#myelement.outViewPort{
@@ -78,6 +78,14 @@ Roadmap
 -------
 - check in/out viewport from top too
 - option to only animate once, then keep in final state ([quick fix here](https://github.com/davidhalford/DivPeek/issues/3).)
+
+DivPeek in the wild
+-------------------
+DivPeek has been implemented in the following sites:
+- [fresh-fruit.com](http://www.fresh-fruit.com/)
+- [werkenbijgreenhousegroup.com](https://www.werkenbijgreenhousegroup.com/)
+
+If you would like your site listed here for using DivPeek, let me know and I'll add it!
 
 
 
